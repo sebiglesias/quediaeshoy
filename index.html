@@ -8,7 +8,8 @@
   </head>
   <body class="fullscreen">
     <div class="container">
-      <h1 class="title">Hoy es <script>new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado")[(new Date()).getDay()]</script></h1>
+      <h1 class="title" id="title"></h1>
     </div>
   </body>
+<script>document.getElementById("title").innerHTML = "Hoy es " + new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado")[new Date().getDay()]</script></h1>
 </html>
